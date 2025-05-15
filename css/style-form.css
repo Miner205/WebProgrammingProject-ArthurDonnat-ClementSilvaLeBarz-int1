@@ -1,0 +1,62 @@
+/* Style for forms : in Quiz.html, ... */
+
+legend,
+button[type="submit"] {
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: lightgreen;
+}
+
+form,
+fieldset,
+input,
+select {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    text-align: left;
+}
+
+button[type="submit"]:hover {
+    color: yellow;
+}
+
+button[type="submit"] {
+    padding: 5px;
+    padding-inline: 25px;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    min-width: 40%;
+}
+
+#practice {
+    min-width: 95%;
+    min-height: 100px;
+    margin-bottom: 12px;
+}
+
+#submitbut {
+    text-align: center;
+}
+
+fieldset {
+    padding-left: 2%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-left: 3%;
+}
