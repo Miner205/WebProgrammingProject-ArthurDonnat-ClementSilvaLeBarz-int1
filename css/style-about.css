@@ -1,0 +1,40 @@
+section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+.team-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+.team-member {
+            text-align: center;
+            max-width: 300px;
+        }
+
+.team-member img {
+            width: 200px;
+            border-radius: 20px;
+        }
+
+.efrei-logo {
+            width: 340px;
+        }*
+
+footer {
+      background-color: #1a531e;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+        
