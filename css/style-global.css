@@ -10,7 +10,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #4CAF50;
+  background-color: #1a531e;
   padding: 10px 40px;
   position: fixed;
   top: 0;
@@ -54,7 +54,7 @@ nav ul li a::after {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: #d4f8c4;
+  background-color: #f1f5ef;
   transition: width 0.3s ease;
 }
 
@@ -63,7 +63,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: #d4f8c4;
+  color: #f1f5ef;
   transform: scale(1.05);
 }
 
@@ -134,7 +134,7 @@ nav ul li a:hover {
 }
 
 .card-overlay button {
-  background-color: #4CAF50;
+  background-color: #1a531e;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -145,11 +145,11 @@ nav ul li a:hover {
 }
 
 .card-overlay button:hover {
-  background-color: #388e3c;
+  background-color: #1a531e;
 }
 
 footer {
-  background-color: #4CAF50;
+  background-color: #1a531e;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -157,3 +157,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
