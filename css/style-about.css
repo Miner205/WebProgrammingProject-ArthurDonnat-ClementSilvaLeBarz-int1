@@ -14,7 +14,7 @@ section {
         }
 
 .team-member {
-            text-align: center;
+            text-align: left;
             max-width: 300px;
         }
 
@@ -25,7 +25,42 @@ section {
 
 .efrei-logo {
             width: 340px;
-        }*
+        }
+
+
+#grp{
+    font-size: 35px;
+}
+
+
+
+
+.stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content:center;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+.stat-card {
+      flex: 1 1 250px;
+      background-color: #f1f5ef;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+.stat-card h3 {
+      margin-bottom: 10px;
+      color: #1a531e;
+    }
+
+.stat-card p{
+    font-weight: bold;
+}
 
 footer {
       background-color: #1a531e;
@@ -36,5 +71,3 @@ footer {
       bottom: 0;
       width: 100%;
     }
-
-        
