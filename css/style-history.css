@@ -1,4 +1,3 @@
-/* Style for History.hmtl */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -69,10 +68,11 @@ nav ul li a:hover {
 }
 
 .content {
-  max-width: 1200px;
-  margin: 140px auto 0;
-  padding: 0 20px 100px;
-  text-align: justify;
+      max-width: 1200px;
+      margin: 140px auto 0;
+      padding: 0 20px 100px;
+      line-height: 1.8;
+      color: #333;
 }
 
 .content #title{
@@ -142,6 +142,7 @@ nav ul li a:hover {
   background-color: #1a531e;
   border: none;
   color: white;
+  font-weight: bold;
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 5px;
@@ -154,7 +155,8 @@ nav ul li a:hover {
 }
 
 .outline{
-    text-align: center;
+    margin-top: 5px;
+    text-align: left;
 
 }
 
