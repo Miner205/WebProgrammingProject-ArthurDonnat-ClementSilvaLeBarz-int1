@@ -1,18 +1,39 @@
 /* Style for forms : in Quiz.html, ... */
 
-legend,
-button[type="submit"] {
-    background-color: green;
-    color: #fff;
-    border-radius: 5px;
+/* Quiz form : */
+
+form {
+    width: 60%;
+    margin: 50px auto 50px auto;
+    background-color: #fff;
+    padding: 10px 12px;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
-tbody tr:nth-child(2n+1) {
-    background-color: lightgreen;
+fieldset {
+    border: 1px solid green;
+    border-radius: 8px;
+    margin: 10px;
 }
 
-form,
-fieldset,
+legend {
+    padding: 5px 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    color: blue;
+    text-decoration-line: underline;
+}
+
+.questions {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+
+
+/*rest to cf par rapport au tp3 :*/
+
+
 input,
 select {
     border: 2px solid green;
@@ -21,42 +42,17 @@ select {
     margin: 5px;
 }
 
-form {
-    text-align: left;
+button[type="submit"] {
+    background-color: green;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0px auto;
+    display: block;
 }
 
 button[type="submit"]:hover {
-    color: yellow;
-}
-
-button[type="submit"] {
-    padding: 5px;
-    padding-inline: 25px;
-    border: none;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-select {
-    min-width: 40%;
-}
-
-#practice {
-    min-width: 95%;
-    min-height: 100px;
-    margin-bottom: 12px;
-}
-
-#submitbut {
-    text-align: center;
-}
-
-fieldset {
-    padding-left: 2%;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-left: 3%;
+    background-color: darkgreen;
 }

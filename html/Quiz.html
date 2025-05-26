@@ -1,108 +1,88 @@
 <!-- this page is a quiz about Mineraft. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minecraft Quiz</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style-global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style-global.css" />
+    <link rel="stylesheet" href="../css/style-form.css" />
 </head>
+
 <body>
 
-  <header>
-    <img src="../img/mycelium.png" alt="Logo Minecraft" />
-    <nav>
-      <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="History.html">History</a></li>
-        <li><a href="Themes.html">Themes</a></li>
-        <li><a href="Quiz.html">Quiz</a></li>
-        <li><a href="About.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <img src="../img/mycelium.png" alt="Logo Minecraft" />
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Themes.html">Themes</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <section>
         <h2>Minecraft Quiz :</h2>
+
         <form>
 
-            <fieldset>
+            <fieldset class="quiz">
                 <legend>Block Knowledge :</legend>
-
-                <label for="name">Name :</label>
-                <input type="text" id="name"> <br>
-
-                <label for="surname">Surname :</label>
-                <input type="text" id="surname"> <br>
-
-                <label for="birth">Birth date :</label>
-                <input type="date" id="birth"> <br>
-
-                <label for="mail">Mail address :</label>
-                <input type="email" id="mail"> <br>
-
-                <label for="myselect">Status :</label>
-                <select id="myselect">
-                    <option value="">Select your status</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
+                <ol>
+                    <li>Question q1
+                        <ul class="questions">
+                            <li>
+                                <input type="radio" id="block-q1_1" name="block-q1" value="a" required>
+                                <label for="block-q1_1"></label>answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q1_2" name="block-q1" value="b" required>
+                                <label for="block-q1_2"></label>answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q1_3" name="block-q1" value="c" required>
+                                <label for="block-q1_3"></label>answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Question q2
+                        <ul class="questions">
+                            <li>
+                                <input type="radio" id="block-q2_1" name="block-q2" value="a" required>
+                                <label for="block-q2_1"></label>answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q2_2" name="block-q2" value="b" required>
+                                <label for="block-q2_2"></label>answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q2_3" name="block-q2" value="c" required>
+                                <label for="block-q2_3"></label>answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="quiz">
                 <legend>Craft Knowledge :</legend>
 
-                <br>
-                <label>1. What is Green IT ?</label> <br>
-                <input type="radio" value="radio1" id="r1">
-                <label for="r1">a) A practice aimed at reducing the environmental impact of information
-                    technologies.</label> <br>
-                <input type="radio" value="radio2" id="r2">
-                <label for="r2">b) A system for recycling old computers.</label> <br>
-                <input type="radio" value="radio3" id="r3">
-                <label for="r3">c) A method for increasing the energy consumption of servers.</label> <br>
 
-                <br>
-                <label>2. What is the main objective of Green IT ?</label> <br>
-                <input type="checkbox" value="checkbox1" id="c1">
-                <label for="c1">a) Reduce energy consumption.</label> <br>
-                <input type="checkbox" value="checkbox2" id="c2">
-                <label for="c2">b) Minimise electronic waste.</label> <br>
-                <input type="checkbox" value="checkbox3" id="c3">
-                <label for="c3">c) Optimising the performance of electronic devices.</label> <br>
 
-                <br>
-                <label for="practice">3. Give an example of Green IT practice :</label> <br>
-                <input type="text" id="practice"> <br>
             </fieldset>
 
             <fieldset>
                 <legend>Update Knowledge :</legend>
 
-                <label for="name">Name :</label>
-                <input type="text" id="name"> <br>
 
-                <label for="surname">Surname :</label>
-                <input type="text" id="surname"> <br>
-
-                <label for="birth">Birth date :</label>
-                <input type="date" id="birth"> <br>
-
-                <label for="mail">Mail address :</label>
-                <input type="email" id="mail"> <br>
-
-                <label for="myselect">Status :</label>
-                <select id="myselect">
-                    <option value="">Select your status</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
             </fieldset>
 
-            <div id="submitbut">
-                <button type="submit">Submit</button>
+            <div>
+                <button type="submit" class="quiz">Submit</button>
             </div>
 
         </form>
