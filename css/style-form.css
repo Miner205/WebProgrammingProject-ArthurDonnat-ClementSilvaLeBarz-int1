@@ -9,6 +9,7 @@ form {
     padding: 10px 12px;
     border: 2px solid black;
     border-radius: 8px;
+    text-align: left;
 }
 
 fieldset {
@@ -25,19 +26,8 @@ legend {
     text-decoration-line: underline;
 }
 
-.questions {
+.questions ul {
     list-style-type: none;
-    margin: 5px 0px;
-}
-
-
-/*rest to cf par rapport au tp3 :*/
-
-
-input,
-select {
-    border: 2px solid green;
-    border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
@@ -55,4 +45,13 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: darkgreen;
+}
+
+button[type="submit"]:disabled {
+    background-color: gray;
+}
+
+#quiz-results {
+    display: inline-table;
+    width: 50%;
 }

@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style-global.css" />
     <link rel="stylesheet" href="../css/style-form.css" />
+    <link rel="stylesheet" href="../css/style-table.css">
+    <script type="text/javascript" src="../js/quiz.js"></script>
 </head>
 
 <body>
@@ -25,42 +27,43 @@
             </ul>
         </nav>
     </header>
-    <section>
+
+    <main class="content">
         <h2>Minecraft Quiz :</h2>
 
-        <form>
+        <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
 
             <fieldset class="quiz">
                 <legend>Block Knowledge :</legend>
                 <ol>
-                    <li>Question q1
-                        <ul class="questions">
+                    <li class="questions">Question q1
+                        <ul>
                             <li>
-                                <input type="radio" id="block-q1_1" name="block-q1" value="a" required>
+                                <input type="radio" id="block-q1_1" name="block-q1" value="a">
                                 <label for="block-q1_1"></label>answer 1</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q1_2" name="block-q1" value="b" required>
+                                <input type="radio" id="block-q1_2" name="block-q1" value="b">
                                 <label for="block-q1_2"></label>answer 2</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q1_3" name="block-q1" value="c" required>
+                                <input type="radio" id="block-q1_3" name="block-q1" value="c">
                                 <label for="block-q1_3"></label>answer 3</label>
                             </li>
                         </ul>
                     </li>
-                    <li>Question q2
-                        <ul class="questions">
+                    <li class="questions">Question q2
+                        <ul>
                             <li>
-                                <input type="radio" id="block-q2_1" name="block-q2" value="a" required>
+                                <input type="radio" id="block-q2_1" name="block-q2" value="a">
                                 <label for="block-q2_1"></label>answer 1</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q2_2" name="block-q2" value="b" required>
+                                <input type="radio" id="block-q2_2" name="block-q2" value="b">
                                 <label for="block-q2_2"></label>answer 2</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q2_3" name="block-q2" value="c" required>
+                                <input type="radio" id="block-q2_3" name="block-q2" value="c">
                                 <label for="block-q2_3"></label>answer 3</label>
                             </li>
                         </ul>
@@ -75,18 +78,33 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="quiz">
                 <legend>Update Knowledge :</legend>
 
 
             </fieldset>
 
             <div>
-                <button type="submit" class="quiz">Submit</button>
+                <button type="submit" class="quiz" onclick="submitQuiz()">Submit</button>
             </div>
 
         </form>
-    </section>
+
+        <table id="quiz-results">
+            <caption>Quiz Results</caption>
+            <thead>
+                <tr>
+                    <th>Attempt</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </main>
+
     <footer>
         <p>©️2025 Clément Arthur.</p>
         <p>All rights reserved.</p>
