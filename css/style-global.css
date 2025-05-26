@@ -84,8 +84,10 @@ nav ul li a:hover {
 
 .card {
   position: relative;
-  width: 350px; /* Taille originale rétablie */
-  height: 250px; /* Taille originale rétablie */
+  width: 350px;
+  /* Taille originale rétablie */
+  height: 250px;
+  /* Taille originale rétablie */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -153,8 +155,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
 }
-
