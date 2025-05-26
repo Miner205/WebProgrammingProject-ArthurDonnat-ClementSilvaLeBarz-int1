@@ -1,25 +1,43 @@
 /* Style for tables : in About.html, ... */
 
-table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
 td,
-th,
-caption {
+th {
     border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+}
+
+thead th {
+    padding: 10px;
 }
 
 caption {
-    background-color: green;
-    color: red;
-    font-size: large;
+    border: 2px solid #333;
+    background-color: #2e7d32;
+    color: rgb(176, 188, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 thead,
 tfoot {
-    background-color: green;
+    background-color: #2e7d32;
     color: #fff;
-    border-radius: 5px;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: lightgreen;
+    background-color: #ddffe2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f8f3;
 }
