@@ -1,0 +1,43 @@
+{
+    "intents": [
+        {
+            "tag": "greet",
+            "patterns": [
+                "Hello",
+                "Hi"
+            ],
+            "responses": [
+                "Hello, how can I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you soon",
+                "See you next time"
+            ],
+            "responses": [
+                "See you soon! Don't hesitate if you have any more questions."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thank you very much",
+                "Thank you for your help"
+            ],
+            "responses": [
+                "You're welcome! It's a pleasure to help you."
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I'm not sure I understand. Could you please rephrase your question?"
+            ]
+        }
+    ]
+}

@@ -22,13 +22,16 @@ function submitQuiz() {
 
             //Then we compute the results
             var score = 0;
-            const radio = document.querySelectorAll('input[name="q1"]:checked');
-            if (radio[0] && radio[0].value === 'a') {
-                score += 4;
-            }
-
+            const answers = ['a','c'];
+            const radios = document.querySelectorAll('input[name*="q"]:checked');
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].value === answers[i]) {
+                    score += 1;
+                }
+            };
             console.log("score : " + score);
 
+            //put the score in the table
             const tableBody = document.getElementById("quiz-results").getElementsByTagName('tbody')[0];
             let newRow = tableBody.insertRow(-1);
             let display_attempt = newRow.insertCell(0);
@@ -36,13 +39,13 @@ function submitQuiz() {
             let display_score = newRow.insertCell(1);
             display_score.innerHTML = score;
 
-            if (nbAttempt >= 5) {
+            if (nbAttempt >= 5) { //No more than 5 attempts
                 allquiz.forEach(item => {
                     item.disabled = true;
                 });
             }
             else {
-                allquiz.forEach(item => {
+                allquiz.forEach(item => { //Erase the quiz when submited
                     item.querySelectorAll('input').forEach(i => {
                         i.checked = false;
                     });
