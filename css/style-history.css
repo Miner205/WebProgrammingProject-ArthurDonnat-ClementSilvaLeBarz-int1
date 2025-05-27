@@ -1,9 +1,20 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+.background {
+      background-image: url('../img/HISTORY.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
 
 header {
   display: flex;
@@ -68,31 +79,25 @@ nav ul li a:hover {
 }
 
 .content {
-      max-width: 1200px;
-      margin: 140px auto 0;
-      padding: 0 20px 100px;
-      line-height: 1.8;
-      color: #333;
-}
-
-.content #title{
-    text-align: center;
+  max-width: 1200px;
+  margin: 25px auto 0;
+  padding: 0 20px 100px;
+  text-align: center;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  gap: 60px;
+  justify-content: justify;
   margin-top: 30px;
 }
 
 .card {
   position: relative;
-  width: 350px; /* Taille originale rétablie */
-  height: 250px; /* Taille originale rétablie */
+  width: 550px;
+  height: 450px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -154,15 +159,62 @@ nav ul li a:hover {
   background-color: #1a531e;
 }
 
-.outline{
-    margin-top: 5px;
-    text-align: left;
-
+footer {
+  background-color: #1a531e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
 }
 
-h3{
+.footer-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.footer-column {
+  flex: 1 1 30%;
+  padding: px;
+  min-width: 200px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+h1{
     text-align: center;
 }
+
+
+
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 80%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+    }
 
 footer {
   background-color: #1a531e;
@@ -172,4 +224,4 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-}
+    }
