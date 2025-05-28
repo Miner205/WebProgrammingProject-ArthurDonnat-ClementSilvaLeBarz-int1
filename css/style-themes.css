@@ -21,6 +21,7 @@ header {
   justify-content: center;
   gap: 40px;
   background-color: #1a531e;
+  opacity: 0.9;
   padding: 10px 40px;
   position: fixed;
   top: 0;
@@ -198,6 +199,76 @@ h3{
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 10px;
+    }
+
+
+
+
+.comment-section {
+  background: white;
+  border-radius: 1rem;
+  max-width: 1200px; /* agrandi ici */
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.comment-section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      font-size: 1rem;
+      resize: vertical;
+      min-height: 100px;
+      box-sizing: border-box;
+    }
+
+button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #1a531e;
+      border: none;
+      font-weight: bold;
+      color: white;
+      border-radius: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+button:hover {
+      background: #097a41;
+    }
+
+.comment-list {
+  margin-top: 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.comment {
+      background: #f1f5f9;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+.comment p {
+      margin: 0;
+    }
+
+.comment small {
+      color: #666;
+      display: block;
+      margin-top: 0.5rem;
     }
 
 footer {
