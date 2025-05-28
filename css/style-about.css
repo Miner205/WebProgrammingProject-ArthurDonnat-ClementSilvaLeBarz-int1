@@ -32,8 +32,13 @@ section {
     font-size: 35px;
 }
 
+#titleABU{
+    margin-top: 90px;
+}
 
-
+#first-txt{
+    text-align: justify;
+}
 
 .stats {
       display: flex;
