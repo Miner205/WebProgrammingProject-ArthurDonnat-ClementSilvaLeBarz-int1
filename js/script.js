@@ -1,8 +1,7 @@
-
-    window.onload = () => {
+window.onload = () => {
       const savedComments = JSON.parse(localStorage.getItem('comments') || "[]");
       savedComments.forEach(comment => renderComment(comment));
-    }
+    };
 
     function addComment() {
       const input = document.getElementById('commentInput');
@@ -27,6 +26,10 @@
       const list = document.getElementById('commentList');
       const div = document.createElement('div');
       div.className = 'comment';
-      div.innerHTML = `<p>${comment.message}</p><small>${comment.date}</small>`;
+
+      // Convertir les sauts de ligne en <br>
+      const formattedMessage = comment.message.replace(/\n/g, '<br>');
+
+      div.innerHTML = `<p>${formattedMessage}</p><small>${comment.date}</small>`;
       list.prepend(div);
     }
