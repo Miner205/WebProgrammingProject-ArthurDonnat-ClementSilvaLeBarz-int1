@@ -16,13 +16,15 @@
     }
 
 
-
-    .section img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+.section img {
+  display: block;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
     .section p {
       margin-top: 20px;
