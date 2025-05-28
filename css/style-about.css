@@ -76,3 +76,19 @@ footer {
       bottom: 0;
       width: 100%;
     }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
