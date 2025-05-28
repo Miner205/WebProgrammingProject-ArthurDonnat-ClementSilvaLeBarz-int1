@@ -28,3 +28,19 @@
       margin-top: 10px;
       line-height: 1.6;
     }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
