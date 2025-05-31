@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minecraft Discovery</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style-global.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style-global.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-chatbot.css">
+  <script type="text/javascript" src="../js/chatbot.js"></script>
 </head>
+
 <body>
 
   <header>
-    <img src="../img/mycelium.png" alt="Logo Minecraft" /> 
+    <img src="../img/mycelium.png" alt="Logo Minecraft" />
     <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="History.html">History</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Development.html">Development</a></li>
-                        <li><a href="Evolution.html">Evolution</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="Themes.html">Themes</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Multiplayer.html">Multiplayer</a></li>
-                        <li><a href="Redstone.html">Redstone</a></li>
-                        <li><a href="Community.html">Community</a></li>
-                    </ul>
-                </li>
-                <li><a href="Quiz.html">Quiz</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-        </nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="History.html">History</a>
+          <ul class="dropdown-menu">
+            <li><a href="Development.html">Development</a></li>
+            <li><a href="Evolution.html">Evolution</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="Themes.html">Themes</a>
+          <ul class="dropdown-menu">
+            <li><a href="Multiplayer.html">Multiplayer</a></li>
+            <li><a href="Redstone.html">Redstone</a></li>
+            <li><a href="Community.html">Community</a></li>
+          </ul>
+        </li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a href="About.html">About Us</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="background">
     <div class="intro-text">
       <h2>Welcome in the Universe of minecraft</h2>
-      <p>Discover an open world game where the only limit is your imagination. A game that have rocked an entire generation !</p>
+      <p>Discover an open world game where the only limit is your imagination. A game that have rocked an entire
+        generation !</p>
     </div>
   </div>
 
-    <h1>Choose a theme to start your experience</h1>
-    <h3>If you have any suggestion, feel free to go in the themes page and let a comment</h3>
-    <main class="content">
+  <h1>Choose a theme to start your experience</h1>
+  <h3>If you have any suggestion, feel free to go in the themes page and let a comment</h3>
+  <main class="content">
     <hr />
     <div class="cards">
       <div class="card">
@@ -70,22 +75,29 @@
       </div>
     </div>
   </main>
-<footer>
-        <p>©️2025 Clément Arthur.</p>
-        <p>All rights reserved.</p>
-        <p>This page only explore the Java<br> version of Minecraft</p>
-</footer>
 
-</body>
-</html>
+  <div id="chatbot">
+    <h4>Chatbot</h4>
+    <div id="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Ask your question...">
+      <input type="button" value="Send" id="sendbutton" onclick="fetchJSON('../json/chatbot.json')">
+    </div>
+    <img src="../img/Chatbot_Bubble.png" alt="Chatbot Bubble" id="chatbotbubble">
+  </div>
 
+  <footer>
+    <p>©️2025 Clément Arthur.</p>
+    <p>All rights reserved.</p>
+    <p>This page only explore the Java<br> version of Minecraft.</p>
+  </footer>
 
-
-
-</body>
-</html>
-<script>
-    window.onload = function() {
-        alert("Welcome you are going the Minecraft, and all the possibilities that it offers.")
+  <script>
+    window.onload = function () {
+      alert("Welcome you are going the Minecraft, and all the possibilities that it offers.")
     }
-</script>
+  </script>
+
+</body>
+
+</html>

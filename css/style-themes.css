@@ -1,19 +1,20 @@
-body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-    }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
 
 .background {
-      background-image: url('../img/Theme1.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      position: relative;
-      color: white;
-      text-shadow: 1px 1px 4px #000;
-    }
+  background-image: url('../img/Theme1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+}
 
 header {
   display: flex;
@@ -78,7 +79,7 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
@@ -90,12 +91,12 @@ nav ul li a:hover {
   transform: translateX(-50%);
   background-color: #1a531e;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 999;
   padding: 0;
   margin: 0;
   border-radius: 6px;
-  text-align: center; 
+  text-align: center;
 }
 
 .dropdown-menu li {
@@ -126,12 +127,12 @@ nav ul li a:hover {
   text-align: justify;
 }
 
-.content #title{
-    text-align: center;
+.content #title {
+  text-align: center;
 }
 
 .cards {
-  display:contents;
+  display: contents;
   gap: 30px;
   justify-content: center;
   margin-top: 30px;
@@ -139,8 +140,8 @@ nav ul li a:hover {
 
 .card {
   position: relative;
-  width: 400px; 
-  height: 300px; 
+  width: 400px;
+  height: 300px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -221,13 +222,13 @@ nav ul li a:hover {
   max-width: 500px;
 }
 
-.outline{
-    text-align: center;
+.outline {
+  text-align: center;
 
 }
 
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
 
 .intro-text {
@@ -240,24 +241,25 @@ h3{
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 10px;
-    }
+}
 
 
+/*Let a comment part*/
 
 .comment-section {
-      background: white;
-      border-radius: 1rem;
-      max-width: 1200px;
-      margin: auto;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      padding: 2rem;
-    }
+  background: white;
+  border-radius: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
 
-    .comment-section h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #222;
-    }
+.comment-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222;
+}
 
 textarea {
   width: 100%;
@@ -265,62 +267,62 @@ textarea {
   border-radius: 0.75rem;
   padding: 1rem;
   font-size: 1rem;
-  resize: none; 
+  resize: none;
   min-height: 100px;
   box-sizing: border-box;
 }
 
 
-    button {
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background: #1a531e;
-      border: none;
-      color: white;
-      border-radius: 0.75rem;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #1a531e;
+  border: none;
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    button:hover {
-      background: #09c431;
-    }
+button:hover {
+  background: #09c431;
+}
 
-    .comment-list {
-      margin-top: 2rem;
-      max-height: 300px;
-      overflow-y: auto;
-      padding-right: 10px;
-    }
+.comment-list {
+  margin-top: 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
 
-    .comment {
-      background: #f1f5f9;
-      border-radius: 0.75rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
+.comment {
+  background: #f1f5f9;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
-    .comment p {
-      margin: 0;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
+.comment p {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
-    .comment small {
-      color: #666;
-      display: block;
-      margin-top: 0.5rem;
-    }
+.comment small {
+  color: #666;
+  display: block;
+  margin-top: 0.5rem;
+}
 
 footer {
   background-color: #1a531e;
   color: white;
   text-align: center;
   padding: 20px 0;
-  position:relative;
-  bottom:0;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
@@ -332,21 +334,10 @@ footer {
 
 .cards {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .card img {
   width: 100%;
   object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-

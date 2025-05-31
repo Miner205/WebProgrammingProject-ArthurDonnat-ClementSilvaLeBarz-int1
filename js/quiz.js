@@ -22,7 +22,7 @@ function submitQuiz() {
 
             //Then we compute the results
             var score = 0;
-            const answers = ['a','c'];
+            const answers = ['a', 'c'];
             const radios = document.querySelectorAll('input[name*="q"]:checked');
             for (let i = 0; i < radios.length; i++) {
                 if (radios[i].value === answers[i]) {

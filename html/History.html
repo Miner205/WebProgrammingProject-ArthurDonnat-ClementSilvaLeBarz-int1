@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Minecraft History</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style-history.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style-history.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-chatbot.css">
+  <script type="text/javascript" src="../js/chatbot.js"></script>
+</head>
+
 <body>
 
   <header>
     <img src="../img/mycelium.png" alt="Logo Minecraft" />
     <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="History.html">History</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Development.html">Development</a></li>
-                        <li><a href="Evolution.html">Evolution</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="Themes.html">Themes</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Multiplayer.html">Multiplayer</a></li>
-                        <li><a href="Redstone.html">Redstone</a></li>
-                        <li><a href="Community.html">Community</a></li>
-                    </ul>
-                </li>
-                <li><a href="Quiz.html">Quiz</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-        </nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="History.html">History</a>
+          <ul class="dropdown-menu">
+            <li><a href="Development.html">Development</a></li>
+            <li><a href="Evolution.html">Evolution</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="Themes.html">Themes</a>
+          <ul class="dropdown-menu">
+            <li><a href="Multiplayer.html">Multiplayer</a></li>
+            <li><a href="Redstone.html">Redstone</a></li>
+            <li><a href="Community.html">Community</a></li>
+          </ul>
+        </li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a href="About.html">About Us</a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <div class="background">
     <div class="intro-text">
       <h2>Welcome in the Universe of minecraft</h2>
-      <p>Minecraft is much more than just a video game — it’s a boundless world of creativity, adventure, and endless possibilities. Created by Markus Persson and developed by Mojang Studios, this sandbox game drops players into a procedurally generated world made entirely of blocks to gather, craft, and build. Whether you enjoy construction, exploration, or survival challenges, Minecraft offers something for everyone, whether playing solo or with friends.</p>
+      <p>Minecraft is much more than just a video game — it’s a boundless world of creativity, adventure, and endless
+        possibilities. Created by Markus Persson and developed by Mojang Studios, this sandbox game drops players into a
+        procedurally generated world made entirely of blocks to gather, craft, and build. Whether you enjoy
+        construction, exploration, or survival challenges, Minecraft offers something for everyone, whether playing solo
+        or with friends.</p>
     </div>
   </div>
-  
+
   <main class="content">
-<p class="outline"><b>We will explore two different sides of the history of Minecraft here, the most technical part will talk of the development of this game, the second one is based on the different evolutions that the game had towards the years.</b></p>
+    <p class="outline"><b>We will explore two different sides of the history of Minecraft here, the most technical part
+        will talk of the development of this game, the second one is based on the different evolutions that the game had
+        towards the years.</b></p>
     </p>
     <hr />
     <h2>Where do you want to start?</h2>
@@ -61,17 +72,23 @@
           <a href="Evolution.html"><button>Know More</button></a>
         </div>
       </div>
-  </main> 
-  
-  
-  
+  </main>
+
+  <div id="chatbot">
+    <h4>Chatbot</h4>
+    <div id="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Ask your question...">
+      <input type="button" value="Send" id="sendbutton" onclick="fetchJSON('../json/chatbot.json')">
+    </div>
+    <img src="../img/Chatbot_Bubble.png" alt="Chatbot Bubble" id="chatbotbubble">
+  </div>
+
   <footer>
-      <p>©️2025 Clément Arthur.</p>
-      <p>All rights reserved.</p>
-      <p>This page only explore the Java<br> version of Minecraft</p>
+    <p>©️2025 Clément Arthur.</p>
+    <p>All rights reserved.</p>
+    <p>This page only explore the Java<br> version of Minecraft.</p>
   </footer>
 </body>
 
 </html>
-
-

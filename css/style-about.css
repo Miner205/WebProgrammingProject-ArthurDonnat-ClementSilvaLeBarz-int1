@@ -1,81 +1,81 @@
 section {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
 
 .team-section {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin: 40px 0;
-        }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+}
 
 .team-member {
-            text-align: left;
-            max-width: 300px;
-        }
+  text-align: left;
+  max-width: 300px;
+}
 
 .team-member img {
-            width: 200px;
-            border-radius: 20px;
-        }
+  width: 200px;
+  border-radius: 20px;
+}
 
 .efrei-logo {
-            width: 340px;
-        }
-
-
-#grp{
-    font-size: 35px;
+  width: 340px;
 }
 
-#titleABU{
-    margin-top: 90px;
+
+#grp {
+  font-size: 35px;
 }
 
-#first-txt{
-    text-align: justify;
+#titleAbout {
+  margin-top: 90px;
+}
+
+#first-txt {
+  text-align: justify;
 }
 
 .stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content:center;
-      margin-top: 30px;
-      margin-bottom: 50px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 
 .stat-card {
-      flex: 1 1 250px;
-      background-color: #f1f5ef;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+  flex: 1 1 250px;
+  background-color: #f1f5ef;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 .stat-card h3 {
-      margin-bottom: 10px;
-      color: #1a531e;
-    }
+  margin-bottom: 10px;
+  color: #1a531e;
+}
 
-.stat-card p{
-    font-weight: bold;
+.stat-card p {
+  font-weight: bold;
 }
 
 footer {
-      background-color: #1a531e;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
+  background-color: #1a531e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   nav ul {
@@ -85,7 +85,7 @@ footer {
 
 .cards {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .card img {
