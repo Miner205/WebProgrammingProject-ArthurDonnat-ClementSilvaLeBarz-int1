@@ -126,7 +126,7 @@
 }
 
 #sendbutton {
-    background-color: #2e7d32;
+    background-color: #1a531e;
     color: white;
     padding: 5px;
     border: none;
@@ -136,6 +136,11 @@
     display: block;
     height: 32px;
     width: 80px;
+    transition: 0.3;
+}
+
+#sendbutton:hover{
+    background-color: #2e7d32;
 }
 
 #chatbot> :not(img) {
