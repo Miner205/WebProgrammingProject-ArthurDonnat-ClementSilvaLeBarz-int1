@@ -138,4 +138,9 @@
 
 #chatbot {
     background-color: #00000000;
+    pointer-events: none;
+}
+
+#chatbot img {
+    pointer-events: all;
 }
