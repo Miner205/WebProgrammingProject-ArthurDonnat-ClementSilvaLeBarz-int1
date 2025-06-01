@@ -1,3 +1,4 @@
+/* Main content container */
 .content {
   max-width: 1200px;
   margin: 140px auto 0;
@@ -6,16 +7,19 @@
   color: #333;
 }
 
+/* Headings inside content */
 .content h1,
 .content h2 {
   text-align: center;
   color: #1a531e;
 }
 
+/* Section space */
 .section {
   margin-bottom: 60px;
 }
 
+/* Images inside sections */
 .section img {
   max-width: 100%;
   border-radius: 10px;
@@ -23,16 +27,19 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Paragraphs in sections */
 .section p {
   margin-top: 20px;
   text-align: justify;
 }
 
+/* Unordered lists inside sections */
 .section ul {
   margin-top: 20px;
   padding-left: 20px;
 }
 
+/* Responsive image gallery row */
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -41,6 +48,7 @@
   justify-content: center;
 }
 
+/* Images inside image rows */
 .image-row img {
   flex: 1 1 45%;
   max-width: 500px;
@@ -48,6 +56,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Media block for mixed content like images and videos */
 .media-block {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +65,7 @@
   justify-content: center;
 }
 
+/* Images in media block */
 .media-block img {
   flex: 1 1 45%;
   max-width: 500px;
@@ -63,6 +73,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Embedded iframes in media block */
 .media-block iframe {
   flex: 1 1 45%;
   max-width: 500px;
@@ -72,7 +83,7 @@
   border: none;
 }
 
-
+/* Highlight box for emphasis (quotes, notes etc....) */
 .highlight {
   background-color: #e6f2e6;
   padding: 10px 20px;
@@ -81,6 +92,7 @@
   margin: 30px 0;
 }
 
+/* Footer*/
 footer {
   background-color: #1a531e;
   color: white;
@@ -95,17 +107,20 @@ footer {
   color: black;
 }
 
+/* Responsive navigation layout for small screens */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Card layout responsive styling */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Ensure card images fill available width */
 .card img {
   width: 100%;
   object-fit: cover;
