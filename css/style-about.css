@@ -1,72 +1,84 @@
+/* Main section container */
 section {
   max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
+  margin: 30px auto;       
+  padding: 0 20px;         
 }
 
+/* Team section layout */
 .team-section {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-around; 
+  align-items: center;           
+  flex-wrap: wrap;               
+  gap: 30px;                     
   margin: 40px 0;
 }
 
+/*team member container */
 .team-member {
   text-align: left;
   max-width: 300px;
 }
 
+/* Team member images */
 .team-member img {
   width: 200px;
-  border-radius: 20px;
+  border-radius: 20px; /* Rounded corners */
 }
 
+/* Efrei logo */
 .efrei-logo {
   width: 340px;
 }
 
-
+/* Group title font size */
 #grp {
   font-size: 35px;
 }
 
+/* About section title margin */
 #titleAbout {
   margin-top: 90px;
 }
 
+/* Justify alignment for first text paragraph */
 #first-txt {
   text-align: justify;
 }
 
+/* Stats container layout */
 .stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  gap: 30px;                
+  justify-content: center;   
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
+/* Individual stat card style*/
 .stat-card {
-  flex: 1 1 250px;
+  flex: 1 1 250px;                
   background-color: #f1f5ef;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
+/* Stat card title style*/
 .stat-card h3 {
   margin-bottom: 10px;
   color: #1a531e;
 }
 
+/* Stat card value style*/
 .stat-card p {
   font-weight: bold;
 }
 
+/* Footer*/
 footer {
   background-color: #1a531e;
   color: white;
@@ -77,18 +89,21 @@ footer {
   width: 100%;
 }
 
+/* Responsive navigation for smaller screens */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Card container layout */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Card image style */
 .card img {
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; 
 }
