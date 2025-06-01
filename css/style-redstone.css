@@ -1,10 +1,12 @@
+/* Main content style */
 .content {
-  max-width: 1200px;
-  margin: 140px auto 0;
-  padding: 0 20px 100px;
-  line-height: 1.8;
-  color: #333;
+  max-width: 1200px;              
+  margin: 140px auto 0;           
+  padding: 0 20px 100px;          
+  line-height: 1.8;               
+  color: #333;                    
 }
+
 
 .content h1,
 .content h2 {
@@ -12,31 +14,35 @@
   color: #1a531e;
 }
 
+/* Each section block styling */
 .section {
-  margin-bottom: 60px;
+  margin-bottom: 60px;            
 }
 
-
+/* Style for images inside sections */
 .section img {
-  display: block;
-  max-width: 100%;
-  border-radius: 20px;
+  display: block;                 
+  max-width: 100%;                
+  border-radius: 20px;            
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: auto;              
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
+/* Paragraph styling within sections */
 .section p {
   margin-top: 20px;
-  text-align: justify;
+  text-align: justify;            
 }
 
+/* Unordered list styling within sections */
 .section ul {
   margin-top: 20px;
-  padding-left: 20px;
+  padding-left: 20px;             
 }
 
+/* Flex container for images and videos */
 .media-block {
   display: flex;
   flex-wrap: wrap;
@@ -45,13 +51,15 @@
   justify-content: center;
 }
 
+/* Style for images inside media-block */
 .media-block img {
-  flex: 1 1 45%;
+  flex: 1 1 45%;                  
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Style for iframes (e.g., embedded videos) inside media-block */
 .media-block iframe {
   flex: 1 1 45%;
   max-width: 500px;
@@ -65,6 +73,7 @@
   color: black;
 }
 
+/* Highlighted text box style */
 .highlight {
   background-color: #e6f2e6;
   padding: 10px 20px;
@@ -73,6 +82,7 @@
   margin: 30px 0;
 }
 
+/* Footer style */
 footer {
   background-color: #1a531e;
   color: white;
@@ -83,18 +93,21 @@ footer {
   width: 100%;
 }
 
+/* Responsive navigation layout for small screens */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
+    flex-direction: column;        
   }
 }
 
+/* Flex container for card layout */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Style for images inside cards */
 .card img {
-  width: 100%;
-  object-fit: cover;
+  width: 100%;                   
+  object-fit: cover;              
 }
