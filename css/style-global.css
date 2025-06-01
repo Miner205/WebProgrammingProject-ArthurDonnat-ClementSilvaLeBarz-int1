@@ -1,3 +1,4 @@
+/*Body style*/
 body,
 html {
   margin: 0;
@@ -6,6 +7,7 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Full-screen background image style */
 .background {
   background-image: url('../img/landscapeMC.jpg');
   background-size: cover;
@@ -16,7 +18,7 @@ html {
   text-shadow: 1px 1px 4px #000;
 }
 
-
+/* Header bar style */
 header {
   display: flex;
   align-items: center;
@@ -31,12 +33,14 @@ header {
   z-index: 1000;
 }
 
+/* Header logo image style */
 header img {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
 }
 
+/* Navigation menu layout */
 nav ul {
   display: flex;
   list-style: none;
@@ -46,10 +50,12 @@ nav ul {
   justify-content: center;
 }
 
+/* Navigation list item with space */
 nav ul li {
   margin-left: 20px;
 }
 
+/* Navigation link style */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -60,6 +66,7 @@ nav ul li a {
   position: relative;
 }
 
+/* Navigation link underline effect (on hover) */
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -75,15 +82,18 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Navigation link hover scaling */
 nav ul li a:hover {
   color: #f1f5ef;
   transform: scale(1.05);
 }
 
+/* Dropdown menu position */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown hidden menu style */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -100,11 +110,13 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Dropdown menu list item reset */
 .dropdown-menu li {
   list-style: none;
   margin: 0;
 }
 
+/* Dropdown link style */
 .dropdown-menu li a {
   color: white;
   padding: 10px 16px;
@@ -113,14 +125,17 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
+/* Dropdown link hover effect */
 .dropdown-menu li a:hover {
   background-color: #2d7040;
 }
 
+/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Main content area style */
 .content {
   max-width: 1200px;
   margin: 25px auto 0;
@@ -128,13 +143,15 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Card container layout */
 .cards {
   display: flex;
   gap: 60px;
-  justify-content: justify;
+  justify-content: justify; 
   margin-top: 30px;
 }
 
+/* Individual card style */
 .card {
   position: relative;
   width: 450px;
@@ -146,10 +163,12 @@ nav ul li a:hover {
   transition: transform 0.3s ease;
 }
 
+/* Card hover lift effect */
 .card:hover {
   transform: translateY(-5px);
 }
 
+/* Card image style */
 .card img {
   width: 100%;
   height: 100%;
@@ -158,10 +177,12 @@ nav ul li a:hover {
   display: block;
 }
 
+/* Card image zoom effect on hover */
 .card:hover img {
   transform: scale(1.1);
 }
 
+/* Overlay on card hover */
 .card-overlay {
   position: absolute;
   inset: 0;
@@ -176,16 +197,19 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Show overlay on card hover */
 .card:hover .card-overlay {
   opacity: 1;
 }
 
+/* Text inside card overlay */
 .card-overlay p {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
+/* Styled button links */
 .button-link {
   display: inline-block;
   padding: 0.5em 1em;
@@ -197,18 +221,24 @@ nav ul li a:hover {
   transition: background 0.3s;
 }
 
+/* Button link hover color change */
 .button-link:hover {
   background-color: #167e1d;
 }
 
+/*Footer*/
 footer {
   background-color: #1a531e;
   color: white;
   text-align: center;
   padding: 20px 0;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
+
+/* Footer layout row */
 .footer-row {
   display: flex;
   justify-content: center;
@@ -216,12 +246,14 @@ footer {
   margin: 5px 0;
 }
 
+/* Footer column layout */
 .footer-column {
   flex: 1 1 30%;
-  padding: px;
+  padding: px; 
   min-width: 200px;
 }
 
+/* Footer link style */
 .footer-link {
   color: white;
   text-decoration: none;
@@ -230,24 +262,23 @@ footer {
   gap: 8px;
 }
 
+/* Footer link hover effect */
 .footer-link:hover {
   text-decoration: underline;
 }
 
+/* Icon image size */
 .icon {
   width: 20px;
   height: 20px;
 }
 
-h1 {
+/* Headline and subheading alignment */
+h1, h3 {
   text-align: center;
 }
 
-h3 {
-  text-align: center;
-}
-
-
+/* Introductory text overlay styling */
 .intro-text {
   position: absolute;
   top: 50%;
@@ -258,14 +289,4 @@ h3 {
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 10px;
-}
-
-footer {
-  background-color: #1a531e;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
