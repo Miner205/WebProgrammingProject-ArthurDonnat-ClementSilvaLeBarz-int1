@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 elts[i].style.display = "block";
             };
             document.getElementById('chatbot').style.backgroundColor = 'rgb(235, 230, 235)';
-            document.getElementById('user-input').style.display = "inline";
-            document.getElementById('sendbutton').style.display = "inline";
         }
         else {
             for (let i = 0; i < elts.length - 1; i++) {
@@ -63,7 +61,7 @@ function loadMessages() {
     if (chatHistory) {
         chatHistory.forEach(message => {
             showMessage(message.text, 'old-' + message.sender);
-            //historyMessages.addMessage(message); // to resave the past msg again
+            historyMessages.addMessage(message); // to resave the past msg again
         });
     }
 

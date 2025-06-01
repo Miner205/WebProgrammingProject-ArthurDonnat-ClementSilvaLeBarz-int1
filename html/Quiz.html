@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Quiz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style-global.css" />
-    <link rel="stylesheet" href="../css/style-form.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/style-form.css">
     <link rel="stylesheet" href="../css/style-table.css">
-    <script type="text/javascript" src="../js/quiz.js"></script>
+    <script src="../js/quiz.js"></script>
 </head>
 
 <body>
@@ -43,9 +43,117 @@
 
     <main class="content">
         <h1 id="titleQuiz">Minecraft Quiz :</h1>
-        <hr />
+        <hr>
 
         <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
+
+            <fieldset class="quiz">
+                <legend>History Knowledge :</legend>
+                <ol>
+                    <li class="questions">Who is the creator of Minecraft ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="history-q1_1" name="history-q1" value='a'>
+                                <label for="history-q1_1">Notch</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q1_2" name="history-q1" value='b'>
+                                <label for="history-q1_2">Jeb</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q1_3" name="history-q1" value='c'>
+                                <label for="history-q1_3">Nicolas</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">When was the official 1.0 release of Minecraft ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="history-q2_1" name="history-q2" value='a'>
+                                <label for="history-q2_1">May 2009</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q2_2" name="history-q2" value='b'>
+                                <label for="history-q2_2">November 2011</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q2_3" name="history-q2" value='c'>
+                                <label for="history-q2_3">September 2014</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">What is currently (01/06/2025) the last version of Minecraft ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="history-q3_1" name="history-q3" value='a'>
+                                <label for="history-q3_1">1.25.3</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q3_2" name="history-q3" value='b'>
+                                <label for="history-q3_2">1.21.5</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="history-q3_3" name="history-q3" value='c'>
+                                <label for="history-q3_3">1.8.7</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset class="quiz">
+                <legend>General Knowledge :</legend>
+                <ol>
+                    <li class="questions">Server - What is the biggest Minecraft server ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="general-q1_1" name="general-q1" value='a'>
+                                <label for="general-q1_1">Paladium</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q1_2" name="general-q1" value='b'>
+                                <label for="general-q1_2">Cubecraft</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q1_3" name="general-q1" value='c'>
+                                <label for="general-q1_3">Hypixel</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">Redstone - A redstone signal can travels up to how much blocks ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="general-q2_1" name="general-q2" value='a'>
+                                <label for="general-q2_1">8</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q2_2" name="general-q2" value='b'>
+                                <label for="general-q2_2">13</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q2_3" name="general-q2" value='c'>
+                                <label for="general-q2_3">15</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">Question q3
+                        <ul>
+                            <li>
+                                <input type="radio" id="general-q3_1" name="general-q3" value='a'>
+                                <label for="general-q3_1">answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q3_2" name="general-q3" value='b'>
+                                <label for="general-q3_2">answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="general-q3_3" name="general-q3" value='c'>
+                                <label for="general-q3_3">answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </fieldset>
 
             <fieldset class="quiz">
                 <legend>Block Knowledge :</legend>
@@ -53,32 +161,48 @@
                     <li class="questions">Question q1
                         <ul>
                             <li>
-                                <input type="radio" id="block-q1_1" name="block-q1" value="a">
-                                <label for="block-q1_1"></label>answer 1</label>
+                                <input type="radio" id="block-q1_1" name="block-q1" value='a'>
+                                <label for="block-q1_1">answer 1</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q1_2" name="block-q1" value="b">
-                                <label for="block-q1_2"></label>answer 2</label>
+                                <input type="radio" id="block-q1_2" name="block-q1" value='b'>
+                                <label for="block-q1_2">answer 2</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q1_3" name="block-q1" value="c">
-                                <label for="block-q1_3"></label>answer 3</label>
+                                <input type="radio" id="block-q1_3" name="block-q1" value='c'>
+                                <label for="block-q1_3">answer 3</label>
                             </li>
                         </ul>
                     </li>
                     <li class="questions">Question q2
                         <ul>
                             <li>
-                                <input type="radio" id="block-q2_1" name="block-q2" value="a">
-                                <label for="block-q2_1"></label>answer 1</label>
+                                <input type="radio" id="block-q2_1" name="block-q2" value='a'>
+                                <label for="block-q2_1">answer 1</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q2_2" name="block-q2" value="b">
-                                <label for="block-q2_2"></label>answer 2</label>
+                                <input type="radio" id="block-q2_2" name="block-q2" value='b'>
+                                <label for="block-q2_2">answer 2</label>
                             </li>
                             <li>
-                                <input type="radio" id="block-q2_3" name="block-q2" value="c">
-                                <label for="block-q2_3"></label>answer 3</label>
+                                <input type="radio" id="block-q2_3" name="block-q2" value='c'>
+                                <label for="block-q2_3">answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">Question q3
+                        <ul>
+                            <li>
+                                <input type="radio" id="block-q3_1" name="block-q3" value='a'>
+                                <label for="block-q3_1">answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q3_2" name="block-q3" value='b'>
+                                <label for="block-q3_2">answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="block-q3_3" name="block-q3" value='c'>
+                                <label for="block-q3_3">answer 3</label>
                             </li>
                         </ul>
                     </li>
@@ -87,15 +211,56 @@
 
             <fieldset class="quiz">
                 <legend>Craft Knowledge :</legend>
-
-
-
-            </fieldset>
-
-            <fieldset class="quiz">
-                <legend>Update Knowledge :</legend>
-
-
+                <ol>
+                    <li class="questions">What is the craft of the redstone comparator ?
+                        <ul>
+                            <li>
+                                <input type="radio" id="craft-q1_1" name="craft-q1" value='a'>
+                                <label for="craft-q1_1">answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q1_2" name="craft-q1" value='b'>
+                                <label for="craft-q1_2">answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q1_3" name="craft-q1" value='c'>
+                                <label for="craft-q1_3">answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">Question q2
+                        <ul>
+                            <li>
+                                <input type="radio" id="craft-q2_1" name="craft-q2" value='a'>
+                                <label for="craft-q2_1">answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q2_2" name="craft-q2" value='b'>
+                                <label for="craft-q2_2">answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q2_3" name="craft-q2" value='c'>
+                                <label for="craft-q2_3">answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions">Question q3
+                        <ul>
+                            <li>
+                                <input type="radio" id="craft-q3_1" name="craft-q3" value='a'>
+                                <label for="craft-q3_1">answer 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q3_2" name="craft-q3" value='b'>
+                                <label for="craft-q3_2">answer 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="craft-q3_3" name="craft-q3" value='c'>
+                                <label for="craft-q3_3">answer 3</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
             </fieldset>
 
             <div>

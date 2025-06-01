@@ -24,12 +24,62 @@
         {
             "tag": "thanks",
             "patterns": [
+                "Thanks",
                 "Thank you",
                 "Thank you very much",
                 "Thank you for your help"
             ],
             "responses": [
                 "You're welcome! It's a pleasure to help you."
+            ]
+        },
+        {
+            "tag": "creator",
+            "patterns": [
+                "Who is the creator of Minecraft"
+            ],
+            "responses": [
+                "Markus Persson, known as Notch, is the Swedish programmer behind Minecraft."
+            ]
+        },
+        {
+            "tag": "release",
+            "patterns": [
+                "When was the official 1.0 release of Minecraft",
+                "release of Minecraft",
+                "release date of Minecraft"
+            ],
+            "responses": [
+                "The first public version of Minecraft was in may 2009, and it's official 1.0 release was in november 2011."
+            ]
+        },
+        {
+            "tag": "current-version",
+            "patterns": [
+                "current version",
+                "last version"
+            ],
+            "responses": [
+                "The last version of Minecraft is currently (01/06/2025) the 1.21.5 ."
+            ]
+        },
+        {
+            "tag": "biggest-server",
+            "patterns": [
+                "biggest Minecraft server",
+                "biggest server"
+            ],
+            "responses": [
+                "The biggest Minecraft server, with more than 50000 daily players and a record at 216000, is Hypixel."
+            ]
+        },
+        {
+            "tag": "redstone-signal",
+            "patterns": [
+                "redstone signal"
+            ],
+            "responses": [
+                "A Redstone signal travels up to 15 blocks, but you can extend it using repeaters."
             ]
         },
         {
