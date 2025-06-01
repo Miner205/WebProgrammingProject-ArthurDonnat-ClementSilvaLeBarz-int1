@@ -113,32 +113,34 @@ function sendMessage(intents) {
     //Retrieve user input in a variable
     const userInput = document.getElementById("user-input");
 
-    //Display date
-    const now = new Date();
-    console.log(now);
-    const chatArea = document.getElementById("chat-box");
-    const messagePart = document.createElement('div');
-    messagePart.classList.add("date");
-    messagePart.textContent = now.toLocaleString();
-    chatArea.appendChild(messagePart);
+    if (userInput.value) { // to don't send an empty message
+        //Display date
+        const now = new Date();
+        console.log(now);
+        const chatArea = document.getElementById("chat-box");
+        const messagePart = document.createElement('div');
+        messagePart.classList.add("date");
+        messagePart.textContent = now.toLocaleString();
+        chatArea.appendChild(messagePart);
 
-    //Display user message in chat box
-    showMessage(userInput.value, 'user');
+        //Display user message in chat box
+        showMessage(userInput.value, 'user');
 
-    //Processing the user's message and obtaining the chatbot's response
-    const botResponse = processMessage(intents, userInput.value);
+        //Processing the user's message and obtaining the chatbot's response
+        const botResponse = processMessage(intents, userInput.value);
 
-    //Displaying the chatbot's response in the chat box 
-    showMessage(botResponse, 'bot');
+        //Displaying the chatbot's response in the chat box 
+        showMessage(botResponse, 'bot');
 
-    //history of messages
-    const msg1 = { text: userInput.value, sender: 'user' };
-    const msg2 = { text: botResponse, sender: 'bot' };
-    historyMessages.addMessage(msg1);
-    historyMessages.addMessage(msg2);
+        //history of messages
+        const msg1 = { text: userInput.value, sender: 'user' };
+        const msg2 = { text: botResponse, sender: 'bot' };
+        historyMessages.addMessage(msg1);
+        historyMessages.addMessage(msg2);
 
-    //Finally, delete the input field
-    userInput.value = "";
+        //Finally, delete the input field
+        userInput.value = "";
+    }
 }
 
 function showMessage(message, sender) {

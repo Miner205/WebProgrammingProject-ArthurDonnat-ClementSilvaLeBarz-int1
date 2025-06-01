@@ -83,19 +83,19 @@
             ]
         },
         {
-            "tag": "fallback",
-            "patterns": [],
-            "responses": [
-                "I'm sorry, I'm not sure I understood. Could you please rephrase your question?"
-            ]
-        },
-        {
-            "tag": "Information",
+            "tag": "information",
             "patterns": [
                 "information"
             ],
             "responses": [
-                "Use the naviagtion bar no navigate between, the pages and learn some informations. But if you have a specific question such as who is the creator of Minecraft, I can try to answer to it. "
+                "Use the naviagtion bar to navigate between the pages and learn some informations. Moreover, if you have a specific question, such as who is the creator of Minecraft, I can try to answer to it."
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I'm not sure I understood. Could you please rephrase your question?"
             ]
         }
     ]
