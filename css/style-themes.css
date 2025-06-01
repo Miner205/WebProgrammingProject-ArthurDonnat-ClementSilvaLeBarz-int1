@@ -1,3 +1,4 @@
+/* Body style*/
 body,
 html {
   margin: 0;
@@ -6,6 +7,7 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Fullscreen background image style */
 .background {
   background-image: url('../img/Theme1.jpg');
   background-size: cover;
@@ -16,6 +18,7 @@ html {
   text-shadow: 1px 1px 4px #000;
 }
 
+/* navbar */
 header {
   display: flex;
   align-items: center;
@@ -30,12 +33,14 @@ header {
   z-index: 1000;
 }
 
+/* Logo image inside header */
 header img {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
 }
 
+/* Navigation menu layout */
 nav ul {
   display: flex;
   list-style: none;
@@ -45,10 +50,12 @@ nav ul {
   justify-content: center;
 }
 
+/* Navigation list items with space */
 nav ul li {
   margin-left: 20px;
 }
 
+/* Navigation link base style */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -59,6 +66,7 @@ nav ul li a {
   position: relative;
 }
 
+/* Underline effect on hover */
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -74,15 +82,18 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Slight scale and color change on hover */
 nav ul li a:hover {
   color: #f1f5ef;
   transform: scale(1.05);
 }
 
+/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown menu style (hidden by default) */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -99,11 +110,13 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Dropdown list item style */
 .dropdown-menu li {
   list-style: none;
   margin: 0;
 }
 
+/* Dropdown link style */
 .dropdown-menu li a {
   color: white;
   padding: 10px 16px;
@@ -112,14 +125,17 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
+/* Dropdown link hover effect */
 .dropdown-menu li a:hover {
   background-color: #2d7040;
 }
 
+/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Main content wrapper */
 .content {
   max-width: 1200px;
   margin: 25px auto 0;
@@ -127,10 +143,12 @@ nav ul li a:hover {
   text-align: justify;
 }
 
+/* Title alignment inside content */
 .content #title {
   text-align: center;
 }
 
+/* Card grid layout container */
 .cards {
   display: contents;
   gap: 30px;
@@ -138,6 +156,7 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 
+/* Individual card container */
 .card {
   position: relative;
   width: 400px;
@@ -150,10 +169,12 @@ nav ul li a:hover {
   margin: 10px;
 }
 
+/* Card hover effect (lift) */
 .card:hover {
   transform: translateY(-5px);
 }
 
+/* Card image style */
 .card img {
   width: 100%;
   height: 100%;
@@ -162,10 +183,12 @@ nav ul li a:hover {
   display: block;
 }
 
+/* Card image zoom on hover */
 .card:hover img {
   transform: scale(1.1);
 }
 
+/* Overlay on card hover */
 .card-overlay {
   position: absolute;
   inset: 0;
@@ -180,16 +203,19 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* Show overlay on card hover */
 .card:hover .card-overlay {
   opacity: 1;
 }
 
+/* Text inside card overlay */
 .card-overlay p {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
+/* Button-like link style */
 .button-link {
   display: inline-block;
   padding: 0.5em 1em;
@@ -201,11 +227,12 @@ nav ul li a:hover {
   transition: background 0.3s;
 }
 
+/* Button link hover effect */
 .button-link:hover {
   background-color: #167e1d;
 }
 
-
+/* Horizontal card layout with text and image */
 .card-item {
   display: flex;
   align-items: center;
@@ -214,6 +241,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
+/* Description block in horizontal card */
 .card-description {
   flex: 1;
   font-size: x-large;
@@ -222,15 +250,17 @@ nav ul li a:hover {
   max-width: 500px;
 }
 
+/* Text center alignment for outline sections */
 .outline {
   text-align: center;
-
 }
 
+/* Center align h3 headings */
 h3 {
   text-align: center;
 }
 
+/* Intro text overlay on background image */
 .intro-text {
   position: absolute;
   top: 50%;
@@ -243,9 +273,7 @@ h3 {
   border-radius: 10px;
 }
 
-
-/*Let a comment part*/
-
+/* Comment section wrapper */
 .comment-section {
   background: white;
   border-radius: 1rem;
@@ -255,12 +283,14 @@ h3 {
   padding: 2rem;
 }
 
+/* Comment section heading */
 .comment-section h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #222;
 }
 
+/* Text area style */
 textarea {
   width: 100%;
   border: 1px solid #ddd;
@@ -272,7 +302,7 @@ textarea {
   box-sizing: border-box;
 }
 
-
+/* Button style */
 button {
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
@@ -285,10 +315,12 @@ button {
   transition: background 0.3s;
 }
 
+/* Button hover color change */
 button:hover {
   background: #09c431;
 }
 
+/* Comment list container (scrollable) */
 .comment-list {
   margin-top: 2rem;
   max-height: 300px;
@@ -296,6 +328,7 @@ button:hover {
   padding-right: 10px;
 }
 
+/* Individual comment block */
 .comment {
   background: #f1f5f9;
   border-radius: 0.75rem;
@@ -303,6 +336,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+/* Text inside comment */
 .comment p {
   margin: 0;
   white-space: pre-wrap;
@@ -310,12 +344,14 @@ button:hover {
   overflow-wrap: break-word;
 }
 
+/* Timestamp or small text inside comment */
 .comment small {
   color: #666;
   display: block;
   margin-top: 0.5rem;
 }
 
+/* Footer style */
 footer {
   background-color: #1a531e;
   color: white;
@@ -326,17 +362,20 @@ footer {
   width: 100%;
 }
 
+/* Mobile responsive navigation adjustment */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Card grid layout for mobile */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Image inside card grid */
 .card img {
   width: 100%;
   object-fit: cover;
