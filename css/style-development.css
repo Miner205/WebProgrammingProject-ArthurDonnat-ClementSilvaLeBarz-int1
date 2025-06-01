@@ -1,32 +1,37 @@
+/* Main content container */
 .content {
   max-width: 1200px;
-  margin: 140px auto 0;
-  padding: 0 20px 100px;
+  margin: 140px auto 0;          /* Top, auto left/right, no bottom margin */
+  padding: 0 20px 100px;         /* Horizontal padding and bottom padding */
   line-height: 1.8;
   color: #333;
 }
 
+/* Headings inside content */
 .content h1,
 .content h2 {
   text-align: center;
   color: #1a531e;
 }
 
+/* General section spacing */
 .section {
   margin-bottom: 60px;
 }
 
-
+/* List style inside sections */
 .section ul {
   text-align: left;
   list-style-position: outside;
   padding-left: 20px;
 }
 
+/* List item with space */
 .section li {
   margin-bottom: 10px;
 }
 
+/* Image style inside sections */
 .section img {
   max-width: 100%;
   border-radius: 10px;
@@ -34,11 +39,13 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Paragraph style inside sections */
 .section p {
   margin-top: 20px;
   text-align: left;
 }
 
+/* Highlighted content block */
 .highlight {
   background-color: #e6f2e6;
   padding: 10px 20px;
@@ -47,11 +54,13 @@
   margin: 30px 0;
 }
 
+/* Global unordered list style */
 ul {
   margin-top: 20px;
   padding-left: 20px;
 }
 
+/* Stats card container layout */
 .stats {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +69,7 @@ ul {
   margin-top: 30px;
 }
 
+/* Individual stat card */
 .stat-card {
   flex: 1 1 250px;
   background-color: #f1f5ef;
@@ -69,11 +79,13 @@ ul {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Stat card headings */
 .stat-card h3 {
   margin-bottom: 10px;
   color: #1a531e;
 }
 
+/* Image gallery row */
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -82,6 +94,7 @@ ul {
   justify-content: center;
 }
 
+/* Centered image style - small */
 .centered-img1 {
   display: block;
   margin: 20px auto;
@@ -91,6 +104,7 @@ ul {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Centered image style large*/
 .centered-img2 {
   display: block;
   margin: 20px auto;
@@ -100,10 +114,12 @@ ul {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Full width final image */
 #final {
   width: 100%;
 }
 
+/* Footer*/
 footer {
   background-color: #1a531e;
   color: white;
@@ -114,19 +130,21 @@ footer {
   width: 100%;
 }
 
-
+/* Responsive navigation for smaller screens */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Cards container layout */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Card image style */
 .card img {
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures images cover their container while maintaining aspect ratio */
 }
