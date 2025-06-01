@@ -290,3 +290,16 @@ h1, h3 {
   padding: 20px;
   border-radius: 10px;
 }
+
+/* Responsive navigation for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Card image style */
+.card img {
+  width: 100%;
+  object-fit: cover; /* Ensures images cover their container while maintaining aspect ratio */
+}
