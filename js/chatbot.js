@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('chatbotbubble').addEventListener("click", () => {
         var elts = document.getElementById('chatbot').children;
         if (nbClick % 2 == 0) {
+            document.getElementById('chatbot').style.pointerEvents = 'all';
             for (let i = 0; i < elts.length - 1; i++) {
                 elts[i].style.display = "block";
             };
             document.getElementById('chatbot').style.backgroundColor = 'rgb(235, 230, 235)';
         }
         else {
+            document.getElementById('chatbot').style.pointerEvents = 'none';
             for (let i = 0; i < elts.length - 1; i++) {
                 elts[i].style.display = "none";
             };
