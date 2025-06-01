@@ -1,4 +1,3 @@
-
 var nbAttempt = 0;
 
 function submitQuiz() {
@@ -22,7 +21,7 @@ function submitQuiz() {
 
             //Then we compute the results
             var score = 0;
-            const answers = ['a', 'c'];
+            const answers = ['a', 'b', 'b', 'c', 'c', 'a', 'b', 'a', 'a', 'a', 'b', 'c',];
             const radios = document.querySelectorAll('input[name*="q"]:checked');
             for (let i = 0; i < radios.length; i++) {
                 if (radios[i].value === answers[i]) {
@@ -37,7 +36,7 @@ function submitQuiz() {
             let display_attempt = newRow.insertCell(0);
             display_attempt.innerHTML = ++nbAttempt;
             let display_score = newRow.insertCell(1);
-            display_score.innerHTML = score;
+            display_score.innerHTML = score + " / " + answers.length;
 
             if (nbAttempt >= 5) { //No more than 5 attempts
                 allquiz.forEach(item => {
