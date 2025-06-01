@@ -1,3 +1,4 @@
+/* Body style */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Header (navigation bar) */
 header {
   display: flex;
   align-items: center;
@@ -18,12 +20,14 @@ header {
   z-index: 1000;
 }
 
+/* Header logo image */
 header img {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
 }
 
+/* Navigation menu layout */
 nav ul {
   display: flex;
   list-style: none;
@@ -33,10 +37,12 @@ nav ul {
   justify-content: center;
 }
 
+/* Navigation list items */
 nav ul li {
   margin-left: 20px;
 }
 
+/* Navigation links style */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -47,6 +53,7 @@ nav ul li a {
   position: relative;
 }
 
+/* Underline effect on hover */
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -58,6 +65,7 @@ nav ul li a::after {
   transition: width 0.3s ease;
 }
 
+/* Hover effects for navigation links */
 nav ul li a:hover::after {
   width: 100%;
 }
@@ -67,11 +75,12 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-
-.dropdown{
+/* Dropdown menu container */
+.dropdown {
   position: relative;
 }
 
+/* Hidden dropdown menu by default */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -85,14 +94,16 @@ nav ul li a:hover {
   padding: 0;
   margin: 0;
   border-radius: 6px;
-  text-align: center; 
+  text-align: center;
 }
 
+/* Dropdown menu items */
 .dropdown-menu li {
   list-style: none;
   margin: 0;
 }
 
+/* Dropdown menu links */
 .dropdown-menu li a {
   color: white;
   padding: 10px 16px;
@@ -101,26 +112,31 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
+/* Hover effect for dropdown links */
 .dropdown-menu li a:hover {
   background-color: #2d7040;
 }
 
+/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Main content container */
 .content {
   max-width: 1200px;
   margin: 140px auto 50px;
   padding: 0 20px;
 }
 
+/* Page title style */
 .content h1 {
   text-align: center;
   color: #1a531e;
   margin-bottom: 30px;
 }
 
+/* Vertical timeline style */
 .timeline {
   position: relative;
   margin: 30px 0;
@@ -129,10 +145,12 @@ nav ul li a:hover {
   border-left: 4px solid #1a531e;
 }
 
+/* Individual timeline event */
 .timeline-item {
   margin-bottom: 40px;
 }
 
+/* Timeline date text */
 .timeline-item small {
   display: inline-block;
   margin-bottom: 8px;
@@ -141,6 +159,7 @@ nav ul li a:hover {
   color: #333;
 }
 
+/* Timeline event titles */
 .timeline-item h3 {
   margin: 0 0 8px 0;
   font-size: 1.3rem;
@@ -148,12 +167,14 @@ nav ul li a:hover {
   text-align: left;
 }
 
+/* Timeline event description */
 .timeline-item p {
   margin: 0;
   line-height: 1.6;
   color: #333;
 }
 
+/* Image gallery container */
 .image-container {
   display: flex;
   flex-wrap: wrap;
@@ -162,6 +183,7 @@ nav ul li a:hover {
   margin-top: 50px;
 }
 
+/* Evolution image style */
 .evo-img {
   flex: 1 1 300px;
   max-width: 48%;
@@ -169,6 +191,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 footer {
   background-color: #1a531e;
   color: white;
@@ -177,22 +200,26 @@ footer {
   margin-top: 40px;
 }
 
+/* Responsive navigation for small screens */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Cards container layout */
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Card image styling */
 .card img {
   width: 100%;
   object-fit: cover;
 }
 
+/* Margin adjustment for evolution page title */
 #titleEvol {
   margin-top: 90px;
 }
