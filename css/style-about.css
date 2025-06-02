@@ -78,6 +78,32 @@ section {
   font-weight: bold;
 }
 
+* Sources list clean */
+.sources-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Sources links */
+.sources-list a {
+  text-decoration: none;
+  color: #1a531e;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.sources-list a:hover {
+  text-decoration: underline;
+  color: #388e3c;
+}
+
+
 /* Footer*/
 footer {
   background-color: #1a531e;
