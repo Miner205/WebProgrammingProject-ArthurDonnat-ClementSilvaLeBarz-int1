@@ -1,11 +1,12 @@
 
-//chatbot bubble :
-
+//#chatbot bubble :
+//handle hide or show the chatbot when we click on the chatbot bubble
 var nbClick = 0;
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('chatbotbubble').addEventListener("click", () => {
         var elts = document.getElementById('chatbot').children;
         if (nbClick % 2 == 0) {
+            //show the chatbot
             document.getElementById('chatbot').style.pointerEvents = 'all';
             for (let i = 0; i < elts.length - 1; i++) {
                 elts[i].style.display = "block";
@@ -13,18 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('chatbot').style.backgroundColor = 'rgb(235, 230, 235)';
         }
         else {
+            //hide the chatbot
             document.getElementById('chatbot').style.pointerEvents = 'none';
             for (let i = 0; i < elts.length - 1; i++) {
                 elts[i].style.display = "none";
             };
             document.getElementById('chatbot').style.backgroundColor = '#00000000';
         }
-        nbClick++;
+        nbClick = ++nbClick % 2;
     });
-
 });
 
-//chatbot founction :
+//#chatbot founctions :
+//handle the chatbot ; so the messages display, the input user, the bot response, the messages history.
+
+//functions to handle the chat/messages history :
 
 class ChatHistory {
     constructor() {
@@ -70,10 +74,15 @@ function loadMessages() {
     chatArea.appendChild(hr);
 }
 
+//when we quit the pages, we store the messages
 window.addEventListener("beforeunload", saveMessages);
+//when we load the pages, we retrieve the past messages
 window.addEventListener("DOMContentLoaded", loadMessages);
 
 
+//functions to handle the messages display, the input user, the bot response :
+
+//when pressing the send button, we call this function
 // Function for retrieving and processing JSON 
 function fetchJSON(url) {
     // Retrieve JSON from supplied URL 
@@ -110,7 +119,7 @@ function fetchJSON(url) {
         });
 }
 
-
+//function handeling, by calling other fct, the user message & bot response
 function sendMessage(intents) {
     //Retrieve user input in a variable
     const userInput = document.getElementById("user-input");
@@ -145,6 +154,7 @@ function sendMessage(intents) {
     }
 }
 
+//to display a message, by a user or bot, on the messages area (chat-box)
 function showMessage(message, sender) {
     const chatArea = document.getElementById("chat-box");
     const messagePart = document.createElement('div');
@@ -157,7 +167,7 @@ function showMessage(message, sender) {
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
-// Function to process the user's message 
+// Function to process the user's message, and give the bot response
 function processMessage(intents, message) {
     // By default, the response is "I'm sorry, I'm not sure I understand." 
     let response = "I'm sorry, I'm not sure I understand.";

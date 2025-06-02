@@ -88,6 +88,16 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+footer p {
+  width: fit-content;
+  margin: 5px auto;
+}
+
+footer nav {
+  margin-top: -12px;
+  margin-bottom: -5px;
+}
+
 /* Dropdown container */
 .dropdown {
   position: relative;

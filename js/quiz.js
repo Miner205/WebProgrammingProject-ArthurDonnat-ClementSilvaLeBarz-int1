@@ -1,7 +1,10 @@
+
+//to count the nb of attempt and stop after 5 attempts
 var nbAttempt = 0;
 
+//when we click on the submit button of the quiz :
 function submitQuiz() {
-    //First we check that all questions are answered
+    //First we check that all questions have been answered
     var allquiz = document.querySelectorAll('.quiz');
     var required = [];
     allquiz.forEach(item => {
@@ -11,11 +14,15 @@ function submitQuiz() {
     required.forEach(item => { sum += item; });
     let allFilled = (document.querySelectorAll('.questions').length == sum);
     if (!allFilled) {
+        //if all questions are not all answered
         alert("Please fill in all fields before submiting!");
     }
+    //if all questions are all answered
     else {
         //Then we ask if the user really wants to submit
         var res = confirm("Are you sure you want to submit?");
+        //if yes, we check the answers and compute the score,
+        //if no, we do nothing
         if (res == true) {
             alert("Ok, here the results :");
 
