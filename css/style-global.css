@@ -35,7 +35,7 @@ header {
 
 header p {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: larger;
   font-weight: 600;
   padding: 8px 12px;
@@ -313,7 +313,7 @@ h3 {
 }
 
 /* Responsive navigation for smaller screens */
-@media (max-width: 1100px) {
+@media (max-width: 1115px) {
   nav ul {
     flex-direction: column;
   }

@@ -33,6 +33,16 @@ header {
   z-index: 1000;
 }
 
+header p {
+  color: white;
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: 600;
+  padding: 8px 12px;
+  position: fixed;
+  left: 5%;
+}
+
 /* Logo image inside header */
 header img {
   width: 50px;
@@ -373,8 +383,13 @@ footer {
 }
 
 /* Mobile responsive navigation adjustment */
-@media (max-width: 768px) {
+@media (max-width: 1115px) {
   nav ul {
+    flex-direction: column;
+  }
+
+  header p {
+    top: 5px;
     flex-direction: column;
   }
 }

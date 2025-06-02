@@ -42,8 +42,13 @@
 }
 
 /* Responsive navigation for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1115px) {
   nav ul {
+    flex-direction: column;
+  }
+
+  header p {
+    top: 5px;
     flex-direction: column;
   }
 }
