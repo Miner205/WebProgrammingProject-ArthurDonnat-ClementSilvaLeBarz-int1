@@ -258,34 +258,7 @@ footer {
 }
 
 
-/* Footer layout row */
-.footer-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5px 0;
-}
 
-/* Footer column layout */
-.footer-column {
-  flex: 1 1 30%;
-  padding: px;
-  min-width: 200px;
-}
-
-/* Footer link style */
-.footer-link {
-  color: white;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Footer link hover effect */
-.footer-link:hover {
-  text-decoration: underline;
-}
 
 /* Icon image size */
 .icon {
