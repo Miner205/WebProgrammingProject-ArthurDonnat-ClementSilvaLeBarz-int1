@@ -82,6 +82,7 @@ section {
 .sources-section {
   background-color: rgba(26, 83, 30, 0.05); 
   padding: 30px;
+  padding-top: 5px;
   border-radius: 10px;
   margin: 40px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);

@@ -33,6 +33,16 @@ header {
   z-index: 1000;
 }
 
+header p {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  padding: 8px 12px;
+  position: fixed;
+  left: 5%;
+}
+
 /* Header logo image style */
 header img {
   width: 50px;
@@ -157,7 +167,7 @@ footer nav {
 .cards {
   display: flex;
   gap: 60px;
-  justify-content: justify; 
+  justify-content: justify;
   margin-top: 30px;
 }
 
@@ -259,7 +269,7 @@ footer {
 /* Footer column layout */
 .footer-column {
   flex: 1 1 30%;
-  padding: px; 
+  padding: px;
   min-width: 200px;
 }
 
@@ -284,7 +294,8 @@ footer {
 }
 
 /* Headline and subheading alignment */
-h1, h3 {
+h1,
+h3 {
   text-align: center;
 }
 
@@ -302,8 +313,13 @@ h1, h3 {
 }
 
 /* Responsive navigation for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   nav ul {
+    flex-direction: column;
+  }
+
+  header p {
+    top: 5px;
     flex-direction: column;
   }
 }
@@ -311,5 +327,6 @@ h1, h3 {
 /* Card image style */
 .card img {
   width: 100%;
-  object-fit: cover; /* Ensures images cover their container while maintaining aspect ratio */
+  object-fit: cover;
+  /* Ensures images cover their container while maintaining aspect ratio */
 }
