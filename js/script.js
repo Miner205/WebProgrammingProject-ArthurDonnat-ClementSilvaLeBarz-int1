@@ -1,3 +1,5 @@
+//script to handle the comments part in Themes.html
+
 // When the window finishes loading
 window.onload = () => {
   // Retrieve saved comments from localStorage or initialize with an empty array

@@ -1,3 +1,4 @@
+//script to handle the form in the Quiz.html
 
 //to count the nb of attempt and stop after 5 attempts
 var nbAttempt = 0;

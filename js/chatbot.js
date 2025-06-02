@@ -1,3 +1,4 @@
+//script to handle the chatbot in all .html pages (except the Quiz.html)
 
 //#chatbot bubble :
 //handle hide or show the chatbot when we click on the chatbot bubble
