@@ -78,7 +78,7 @@ section {
   font-weight: bold;
 }
 
-* Sources list clean */
+/* Sources list clean */
 .sources-list {
   list-style-type: none;
   padding-left: 0;
@@ -102,6 +102,7 @@ section {
   text-decoration: underline;
   color: #388e3c;
 }
+
 
 
 /* Footer*/
