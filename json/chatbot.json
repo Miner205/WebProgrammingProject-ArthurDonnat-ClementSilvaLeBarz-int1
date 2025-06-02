@@ -18,7 +18,8 @@
                 "See you next time"
             ],
             "responses": [
-                "See you soon! Don't hesitate if you have any more questions."
+                "See you soon! Don't hesitate if you have any more questions.",
+                "Bye Bye."
             ]
         },
         {
@@ -34,7 +35,25 @@
             ]
         },
         {
-            "tag": "creator",
+            "tag": "chatbot-creator",
+            "patterns": [
+                "Who is your creator"
+            ],
+            "responses": [
+                "I'm my own creation, fool human ! (ps : It's Arthur Donnat)"
+            ]
+        },
+        {
+            "tag": "minecraft",
+            "patterns": [
+                "What is Minecraft"
+            ],
+            "responses": [
+                "Minecraft is a 2011 sandbox game developed and published by the Swedish video game developer Mojang Studios."
+            ]
+        },
+        {
+            "tag": "minecraft-creator",
             "patterns": [
                 "Who is the creator of Minecraft"
             ],
