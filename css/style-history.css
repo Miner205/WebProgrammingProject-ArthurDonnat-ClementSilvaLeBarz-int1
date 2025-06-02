@@ -263,34 +263,7 @@ footer {
   width: 100%;
 }
 
-/* Footer row layout */
-.footer-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5px 0;
-}
 
-/* Footer columns */
-.footer-column {
-  flex: 1 1 30%;
-  padding: px;
-  min-width: 200px;
-}
-
-/* Footer links */
-.footer-link {
-  color: white;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Footer link hover underline */
-.footer-link:hover {
-  text-decoration: underline;
-}
 
 /* Icon size for footer or elsewhere */
 .icon {
