@@ -332,7 +332,7 @@ button {
   border-radius: 0.75rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 /* Button hover color change */
