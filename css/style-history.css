@@ -239,7 +239,7 @@ footer nav {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 /* Button link hover color */
